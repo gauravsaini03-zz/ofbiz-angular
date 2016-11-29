@@ -1,0 +1,25 @@
+<ion-view view-title="Web Channel">
+  <ion-content>
+  	<ion-refresher
+	    pulling-text="Pull to refresh..."
+	    on-refresh="doRefresh()">
+  	</ion-refresher>
+    <div class="card">
+	  <div class="item item-divider">
+	    <h2> Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="webstats">&#163; {{webstats.data.WEBPHONE_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="webstats" ng-if="webstats">&#163; {{webstats.data.WEBPHONE_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="webstats">&#163; {{webstats.data.WEBPHONE_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+  </ion-content>
+</ion-view>

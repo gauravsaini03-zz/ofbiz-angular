@@ -1,0 +1,53 @@
+<ion-view view-title="Order Stats">
+  <ion-content>
+  	<ion-refresher
+	    pulling-text="Pull to refresh..."
+	    on-refresh="doRefresh()">
+  	</ion-refresher>
+    <div class="card">
+	  <div class="item item-divider">
+	    <h2> Total Order on System </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Total Approved Orders: <b>{{orderStats.data.totalApprovedOrder}}</b>
+	    </div>
+	    <div class="item">
+	  		Total Held Orders: <b>{{orderStats.data.totalHoldOrder}}</b>
+	    </div>
+	    <div class="item">
+	  		Total Created Orders: <b>{{orderStats.data.totalCreatedOrder}}</b>
+	    </div>
+	    <div class="item">
+	  		Total Processing Orders: <b>{{orderStats.data.totalProcessingOrder}}</b>
+	    </div>
+	    <div class="item">
+	  		Total Completed Orders: <b>{{orderStats.data.totalCompletedOrder}}</b>
+	    </div>
+	    <div class="item">
+	  		Ratio of Succes Orders: <b>{{orderStats.data.orderRatio}}</b>
+	    </div>
+	  </div>
+	  
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    Time since last Succesful Order
+	  </div>
+	  <div class="item item-text-wrap">
+	    <div class="item">
+	  		Web Channel: <b>{{orderStats.data.webLastUpdatedStamp}}</b>
+	    </div>
+	    <div class="item">
+	  		Amazon Channel: <b>{{orderStats.data.amazonLastUpdatedStamp}}</b>
+	    </div>
+	    <div class="item">
+	  		Ebay Channel: <b>{{orderStats.data.ebayLastUpdatedStamp}}</b>
+	    </div>
+	  </div>
+	  
+	</div>
+
+  </ion-content>
+</ion-view>

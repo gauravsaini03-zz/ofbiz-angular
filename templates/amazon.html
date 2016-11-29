@@ -1,0 +1,99 @@
+<ion-view view-title="Amazon">
+  <ion-content>
+  	<ion-refresher
+	    pulling-text="Pull to refresh..."
+	    on-refresh="doRefresh()">
+  	</ion-refresher>
+  	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Amazon UK Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="amazonstats">&#163; {{amazonstats.data.AMAZON_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="amazonstats">&#163; {{amazonstats.data.AMAZON_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="amazonstats">&#163; {{amazonstats.data.AMAZON_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+    <div class="card">
+	  <div class="item item-divider">
+	    <h2> Amazon France Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_FR_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_FR_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_FR_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Amazon Spain Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_ES_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_ES_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_ES_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Amazon Italy Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_IT_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_IT_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_IT_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Amazon Germany Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_DE_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_DE_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="amazonstats">&#8364; {{amazonstats.data.AMAZON_DE_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+  </ion-content>
+</ion-view>

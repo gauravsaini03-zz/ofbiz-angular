@@ -1,0 +1,115 @@
+<ion-view view-title="Ebay">
+  <ion-content>
+  	<ion-refresher
+	    pulling-text="Pull to refresh..."
+	    on-refresh="doRefresh()">
+  	</ion-refresher>
+  	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Ebay UK Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="ebaystats">&#163; {{ebaystats.data.EBAY_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="ebaystats">&#163; {{ebaystats.data.EBAY_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="ebaystats">&#163; {{ebaystats.data.EBAY_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Ebay Europe Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_EU_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_EU_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_EU_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Ebay US Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="ebaystats">&#36; {{ebaystats.data.EBAY_US_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="ebaystats">&#36; {{ebaystats.data.EBAY_US_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="ebaystats">&#36; {{ebaystats.data.EBAY_US_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+	
+    <div class="card">
+	  <div class="item item-divider">
+	    <h2> Ebay France Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_FR_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_FR_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_FR_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Ebay Italy Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_IT_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_IT_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_IT_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="card">
+	  <div class="item item-divider">
+	    <h2> Ebay Germany Sales </h2>
+	  </div>
+	  <div class="item item-text-wrap">
+		<div class="item">
+	  		Today's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_DE_DaySale}}</b>
+	    </div>
+
+	    <div class="item">
+	  		Yesterday's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_DE_LastDaySale}}</b>
+	    </div>
+	    <div class="item">
+	  		Month's Sales: <b ng-if="ebaystats">&#8364; {{ebaystats.data.EBAY_DE_MonthSale}}</b>
+	    </div>
+	  </div>
+	</div>
+  </ion-content>
+</ion-view>
